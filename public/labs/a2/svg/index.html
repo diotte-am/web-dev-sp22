@@ -5,30 +5,115 @@
     <title>SVG</title>
 </head>
 <body>
+<a href="../index.html">Back</a>
 
+<a name="top"></a>
+<h2>Table of content</h2>
+<ul>
+    <li><a href="#svg-rectangles">
+        Drawing Rectangles</a></li>
+    <li><a href="#svg-circles">
+        Drawing Circles</a></li>
+    <li><a href="#svg-polygons">
+        Drawing Polygons</a></li>
+</ul>
+
+<a name="svg-rectangles"></a>
 <h2>Drawing rectangles</h2>
+<a href="#top">Top</a></br>
 
 <svg width="300" height="100">
     <rect width="300" height="100"
           style="fill:rgb(100,0,255); stroke-width:15;
         stroke:rgb(255,255,0)" />
 </svg>
-
-<h2>Drawing circles</h2>
-
-<svg width="100" height="100">
-    <circle cx="50" cy="50" r="40"
-            stroke="orange" stroke-width="8" fill="red" />
+<br>
+<br>
+<br>
+<svg width="325" height="205">
+    <rect width="325" height="205"
+          style="fill:rgb(255,0,255); stroke-width:15;
+        stroke:rgb(255,150,0)" />
 </svg>
 
+<br>
+<br>
+<br>
+<svg width="100" height="100">
+    <defs>
+        <linearGradient id="myGradient" gradientTransform="rotate(90)">
+            <stop offset="5%"  stop-color="purple" />
+            <stop offset="95%" stop-color="red" />
+        </linearGradient>
+    </defs>
+    <rect width="80" height="80"
+          rx="15"
+          fill="url('#myGradient')"/>
+    <circle cx ="40"
+            cy="40"
+            r="35"
+            fill="white"
+            stroke="black"
+            stroke-width="5"/>
+</svg>
+
+<a name="svg-circles"></a>
+<h2>Drawing circles</h2>
+<a href="#top">Top</a></br>
+
+<svg width="100" height="120">
+    <circle cx="50" cy="50" r="40"
+            stroke="orange" stroke-width="8" fill="black" />
+</svg>
+
+<br>
+<svg width="250" height="190">
+    <circle cx="100" cy="100" r="65"
+            stroke="purple" stroke-width="10" fill="blue" />
+    <circle cx="100" cy="100" r="45"
+            stroke="green" stroke-width="10" fill="yellow" />
+    <circle cx="100" cy="100" r="25"
+            stroke="orange" stroke-width="10" fill="red" />
+</svg>
+<br>
+<svg width="250" height="200">
+    <circle cx="100" cy="100" r="60"
+            stroke="black" stroke-width="10" fill="cyan" />
+    <circle cx="130" cy="130" r="60"
+            stroke="cyan" stroke-width="10" fill="black" />
+</svg>
+<br>
+<a name="svg-polygons"></a>
 <h2>Drawing polygons</h2>
+<a href="#top">Top</a></br>
 
 <svg width="300" height="200">
     <polygon points="100,10 40,198 190,78 10,78 160,198"
              style="fill:deeppink; stroke:lime; stroke-width:5; fill-rule:nonzero;" />
 </svg>
+<br>
+<br>
+<svg height="250" width="500">
+    <polygon points="220,10 300,210 170,250 123,234" style="fill:lime;stroke:purple;stroke-width:1" />
+    <polygon points="220,10 170,250 123,234" style="fill:purple;stroke:purple;stroke-width:1" />
 
+</svg>
+<br>
 
+<svg width="800" height="800">
+    <polygon points="150,75 258,137.5 258,262.5 150,325 42,262.6 42,137.5"
+             style="fill:cyan;stroke-width:10;
+              stroke:chartreuse"></polygon>
+    <polygon points="150,325 258,262.5 150,200 42,262.6"
+             style="fill:rebeccapurple;stroke-width:3;
+              stroke:magenta"></polygon>
+    <polygon points="42,137.5 150,75 258,137.5 150,200"
+             style="fill:magenta;stroke-width:3;
+              stroke:rebeccapurple"></polygon>
+</svg>
+
+</body>
+</html>
 
 
 </body>
