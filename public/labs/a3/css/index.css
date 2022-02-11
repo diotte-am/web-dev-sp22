@@ -59,7 +59,7 @@ index.css
     padding-right: 50px;
 }
 
-.padding-fat {
+.wd-padding-fat {
     padding: 50px;
 }
 
@@ -152,7 +152,7 @@ index.css
     height: 150px;
 }
 
-.float-left {
+.wd-float-left {
     float: left;
 }
 
@@ -194,3 +194,4 @@ index.css
     width: 20%;
     float: left;
 }
+

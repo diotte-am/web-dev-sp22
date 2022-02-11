@@ -6,18 +6,28 @@
     background-color: rgb(110,118,125)
 }
 
-.bg-color-dk-dk-gry {
+.wd-bg-color-dk-dk-gry {
     background-color: rgb(30, 32, 35)
 }
 
-.float-left {
+.wd-float-left {
     float: left;
 }
 
-.padding-fat {
+.wd-padding-fat {
     padding: 10px;
 }
 
-.padding-thin {
+.wd-padding-thin {
     padding: 5px;
+}
+
+.wd-right{
+    right: 13px;
+    position: absolute;
+}
+
+.wd-title-border{
+    padding-left: 16px;
+    padding-top: 12px;
 }
