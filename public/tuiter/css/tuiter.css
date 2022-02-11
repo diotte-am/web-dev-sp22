@@ -1,0 +1,23 @@
+.rounded-corners-all-around {
+    border-radius: 8px;
+}
+
+.bg-color-dk-gry {
+    background-color: rgb(110,118,125)
+}
+
+.bg-color-dk-dk-gry {
+    background-color: rgb(30, 32, 35)
+}
+
+.float-left {
+    float: left;
+}
+
+.padding-fat {
+    padding: 10px;
+}
+
+.padding-thin {
+    padding: 5px;
+}
