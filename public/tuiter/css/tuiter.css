@@ -39,7 +39,7 @@
 
 .wd-post-container{
     border-width: 1px;
-    border-color: rgb(30, 32, 35);
+    border-color: rgb(47, 51, 54);
     border-style: solid;
     padding: 5px;
     display: flex;
@@ -154,7 +154,7 @@
 }
 
 .wd-bm-headline-container{
-    border: rgb(110, 118, 125) 1px solid;
+    border: rgb(47, 51, 54) 1px solid;
 }
 
 .wd-headline {
@@ -176,7 +176,7 @@
 }
 
 .wd-bm-container{
-    border: rgb(110, 118, 125) 1px solid;
+    border: rgb(47, 51, 54) 1px solid;
     display: flex;
 }
 
@@ -201,4 +201,16 @@
 .wd-bm-image{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.wd-bm-icon{
+    padding-left: 12px;
+    font-family: "Helvetica Neue";
+    color: rgb(110, 118, 125);
+}
+
+.wd-bm-selected{
+    padding-left: 12px;
+    font-family: "Helvetica Neue";
+    color: red;
 }
