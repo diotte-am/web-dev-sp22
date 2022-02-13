@@ -3,11 +3,11 @@
 }
 
 .bg-color-dk-gry {
-    background-color: rgb(110,118,125)
+    background-color: rgb(110,118,125);
 }
 
 .wd-bg-color-dk-dk-gry {
-    background-color: rgb(30, 32, 35)
+    background-color: rgb(30, 32, 35);
 }
 
 .wd-float-left {
@@ -30,4 +30,12 @@
 .wd-title-border{
     padding-left: 16px;
     padding-top: 12px;
+}
+
+.wd-post-container{
+    border-width: 1px;
+    border-color: rgb(30, 32, 35);
+    border-style: solid;
+    padding: 5px;
+
 }
