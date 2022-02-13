@@ -39,3 +39,39 @@
     padding: 5px;
 
 }
+
+.wd-center-align-vert {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+}
+
+.post-trending{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 10px;
+    line-height: 8px;
+}
+
+.post-trending-sm{
+    font-weight: lighter;
+    color: rgb(110, 118, 125);
+}
+
+.post-trending-lg{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.post-story{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 10px;
+    line-height: 8px;
+}
