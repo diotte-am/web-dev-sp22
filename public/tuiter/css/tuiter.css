@@ -170,9 +170,13 @@
     color: rgb(110, 118, 125);
 }
 
-.wd-bm-avatar{
+.wd-round-frame{
     border-radius: 50%;
+}
+
+.wd-bm-avatar{
     padding-right: 16px;
+    width: 48px;
 }
 
 .wd-bm-container{
