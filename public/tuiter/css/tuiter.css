@@ -209,8 +209,18 @@
     color: rgb(110, 118, 125);
 }
 
-.wd-bm-selected{
+.wd-bm-icon-selected{
     padding-left: 12px;
     font-family: "Helvetica Neue";
     color: red;
+}
+
+.wd-bm-no-icon{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.wd-dist-horiz-space-between {
+    display: flex;
+    justify-content: space-between;
 }
