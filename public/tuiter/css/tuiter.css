@@ -224,3 +224,47 @@
     display: flex;
     justify-content: space-between;
 }
+
+.wd-color-red{
+    color: red;
+}
+
+.wd-color-grey{
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmark-border{
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    line-height: 19px;
+}
+
+.wd-grey-normal-text{
+    font-weight:normal;
+    color:rgb(110, 118, 125);
+}
+
+.wd-bold{
+    font-weight: bold;
+}
+
+.wd-border-only{
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.wd-bookmarks{
+    background-color: black;
+    color: white;
+    width: 698px;
+    margin: auto;
+    border: 10px;
+}
+
+.wd-bookmark-entry{
+    font-family:'Helvetica Neue';
+    font-size:15px;
+    font-color:white;
+    max-width: 506px;
+}
