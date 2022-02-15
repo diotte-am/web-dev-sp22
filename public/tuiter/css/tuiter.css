@@ -1,8 +1,8 @@
-.rounded-corners-all-around {
+.wd-rounded-corners-all-around {
     border-radius: 15px;
 }
 
-.bg-color-dk-gry {
+.wd-bg-color-dk-gry {
     background-color: rgb(110,118,125);
 }
 
@@ -52,32 +52,37 @@
     align-items: center;
 }
 
-.post-trending{
-    font-family: "Helvetica Neue";
+.wd-post-trending{
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 13px;
     font-weight: bold;
     padding-left: 10px;
     line-height: 10px;
 }
 
-.post-trending-sm{
+.wd-post-trending-sm{
     font-weight: lighter;
     color: rgb(110, 118, 125);
 }
 
-.post-trending-lg{
-    font-family: "Helvetica Neue";
+.wd-post-trending-lg{
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 13px;
     font-weight: bold;
 
 }
 
-.post-story{
-    font-family: "Helvetica Neue";
+.wd-post-story{
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 13px;
     font-weight: bold;
     padding-left: 10px;
     line-height: 8px;
+}
+
+.wd-post-story-author{
+    color: white;
+    font-weight: bold;
 }
 
 .wd-image-trending{
@@ -92,7 +97,7 @@
     color: rgb(110, 118, 125);
     font-size: 15px;
     padding: 16px;
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
 }
 
@@ -126,7 +131,7 @@
     color: rgb(29, 161, 242);
     font-size: 15px;
     padding: 16px;
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
 
 }
@@ -158,13 +163,13 @@
 }
 
 .wd-headline {
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
 
 .wd-handle{
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: normal;
     font-size: 13px;
     color: rgb(110, 118, 125);
@@ -185,7 +190,7 @@
 }
 
 .wd-bm-story{
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: normal;
     font-size: 20px}
 
@@ -209,13 +214,13 @@
 
 .wd-bm-icon{
     padding-left: 12px;
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue', sans-serif;
     color: rgb(110, 118, 125);
 }
 
 .wd-bm-icon-selected{
     padding-left: 12px;
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue', sans-serif;
     color: red;
 }
 
@@ -267,7 +272,7 @@
 }
 
 .wd-bookmark-entry{
-    font-family:'Helvetica Neue';
+    font-family: 'Helvetica Neue', sans-serif;
     font-size:15px;
     font-color:white;
     max-width: 506px;
