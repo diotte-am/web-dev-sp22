@@ -1,0 +1,12 @@
+.wd-image-margin {
+    margin: 1rem auto;
+    position: relative;
+}
+
+.wd-image-text {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
