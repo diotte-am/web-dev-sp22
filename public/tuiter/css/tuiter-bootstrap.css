@@ -78,3 +78,17 @@
     display: flex;
     padding: 1px;
 }
+
+.wd-follow-button{
+    display:flex;
+    flex: fit-content;
+    justify-content: right;
+}
+
+.wd-float-right{
+    float: right;
+}
+
+.wd-rounded-rect{
+    border-radius: 25px;
+}
