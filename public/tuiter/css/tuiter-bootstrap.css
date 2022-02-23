@@ -81,7 +81,7 @@
 
 .wd-follow-button{
     display:flex;
-    flex: fit-content;
+    flex: available;
     justify-content: right;
 }
 

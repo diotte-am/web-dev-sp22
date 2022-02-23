@@ -1,0 +1,22 @@
+.wd-color-override{
+    background-color: black;
+    color: gray;
+}
+
+.wd-c-story-container{
+    border-left: #1e2023 solid;
+    border-right: #1e2023 solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+.wd-c-grey-reg-text{
+    color: #60696f;
+    font-weight: normal;
+}
+
+.wd-c-white-bd-text{
+    color: white;
+    font-weight: bold;
+}
