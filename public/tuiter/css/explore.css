@@ -56,3 +56,12 @@
     color: #5d666c;
     font-weight: bold
 }
+
+.wd-icon-color-override-dk{
+    color: #5d656c
+}
+
+.btn-primary.wd-color-override{
+    border-radius: 25px; background-color: #d6d6d6; color: black; border: none; font-weight: bold
+}
+
