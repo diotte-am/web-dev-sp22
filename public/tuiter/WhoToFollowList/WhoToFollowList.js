@@ -5,15 +5,20 @@ const WhoToFollowList = () => {
     return(`
         <ul class="list-group"
              style="border-top-left-radius: 25px; border-top-right-radius: 25px">
-            Who to follow
+             <li class="list-group-item d-grid gap-2 d-flex row">
+                Who to follow
+              </li>
+              
+              
+                   ${
+                 todos.map(todo => {
+              return(WhoToFollowListItem(todo));
+             }).join(' ')
+                }
+
+            
         </ul>
-        <div class="list-group">
-            ${
-        todos.map(todo => {
-            return(WhoToFollowListItem(todo));
-        }).join('')
-    }
-        </div>
+       
     `);
 }
 export default WhoToFollowList;
