@@ -3,9 +3,9 @@ import todos from "./who.js";
 
 const WhoToFollowList = () => {
     return(`
-        <ul class="list-group"
-             style="border-top-left-radius: 25px; border-top-right-radius: 25px">
-             <li class="list-group-item d-grid gap-2 d-flex row">
+        <ul class="list-group m-1"
+             style="border-radius: 25px">
+             <li class="list-group-item d-grid gap-2 d-flex row me-0 pe-0 col-10">
                 Who to follow
               </li>
               

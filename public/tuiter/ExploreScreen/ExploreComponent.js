@@ -9,10 +9,7 @@ const ExploreComponent = () => {
                         <input type="text" class="form-control" placeholder="Search Tuiter"
                                style="border-radius: 0px 25px 25px 0px; border: none; height: 40%; background-color: #1e2023">
                         <a href="../../../tuiter/html/explore-settings.html">
-                            <i class="fas fa-cog fa-2x p-1 wd-icon-color-override" style="
-                            -webkit-text-stroke: 1px #d5d5d5;
-                            -webkit-text-fill-color: #1e2023;
-                            font-size: 1em "></i>
+                            <i class="fas fa-cog fa-2x p-1 wd-icon-color-override text-primary"></i>
                         </a>
                     </div>
 
@@ -22,7 +19,7 @@ const ExploreComponent = () => {
            <ul class="nav mb-2 nav-tabs">
             <div class="container pt-1">
                     <ul class="nav nav-tabs" style="border: none">
-                        <li class="nav-item" >
+                        <li class="nav-item " >
                             <a class="nav-link active wd-color-override" href="#">For you</a>
                         </li>
                         <li class="nav-item">
