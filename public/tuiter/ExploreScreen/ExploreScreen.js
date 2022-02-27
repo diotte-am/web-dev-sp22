@@ -13,7 +13,7 @@ import WhoToFollowList from "../WhoToFollowList";
             ${ExploreComponent()};
         </div>
             
-        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-3 col-xl-3">
             ${WhoToFollowList()}
         </div>
         </div>
