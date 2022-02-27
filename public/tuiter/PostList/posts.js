@@ -7,7 +7,7 @@ export default exploreItems = [
         image:"../image/inspiration4.png",
         avatarImage: '../image/elon.png',
         subhead: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
-        details: 'From training to lauch too landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...<br>netflix.com',
+        details: 'From training to lauch too landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...<br><i class="fas fa-link"><span class="wd-text-regular wd-c-grey-reg-text">netflix.com</span></i>',
         comments: '4.2k',
         retweets: '3.5k',
         likes: '37.5k',
