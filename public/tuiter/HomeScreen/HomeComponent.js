@@ -7,7 +7,7 @@ const HomeComponent = () => {
 
           
              
-           <div class="container pt-1 pb-2" style="border: #1c90ee 1px solid">
+           <div class="container pt-1 pb-2 wd-grey-border">
                    <Span class="wd-c-white-bd-text">Home</Span> 
            </div>
 
