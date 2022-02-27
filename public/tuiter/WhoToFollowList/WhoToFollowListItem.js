@@ -18,4 +18,4 @@ const WhoToFollowListItem = (todo) => {
  </li>
     `);
 }
-export default WhoToFollowListItem;
+export default WhoToFollowListItem

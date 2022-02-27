@@ -4,8 +4,8 @@ import PostSummaryItem from "./PostSummaryItem.js";
 const PostSummaryList = () => {
     return(`
              ${
-        exploreItems.map(todo => {
-            return(PostSummaryItem(todo));
+        exploreItems.map(post => {
+            return(PostSummaryItem(post));
         }).join(' ')
     }
     `);
