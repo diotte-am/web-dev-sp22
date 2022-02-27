@@ -1,18 +1,20 @@
-import PostSummaryList from "../PostSummaryList/index.js";
+import PostList from "../PostList/index.js";
 
 const HomeComponent = () => {
     return(`
 
            
 
-            <div class="container wd-c-story-container">
-                <h6 class="wd-c-white-bd-text">Home</h6>
-                </div>
+          
+             
+           <div class="container wd-c-story-container-headline pt-1 pb-2">
+                   <Span class="wd-c-white-bd-text">Home</Span> 
+           </div>
 
            
     
                      
-           ${PostSummaryList()}
+           ${PostList()}
     `);
 }
 export default HomeComponent;

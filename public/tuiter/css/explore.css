@@ -10,6 +10,12 @@
     justify-content: space-between;
 }
 
+.wd-c-story-container-headline{
+    border: 1px #1e2023 solid;
+    display: flex;
+    justify-content: space-between;
+}
+
 .wd-c-grey-reg-text{
     color: #60696f;
     font-weight: normal;
@@ -63,5 +69,12 @@
 
 .btn-primary.wd-color-override{
     border-radius: 25px; background-color: #d6d6d6; color: black; border: none; font-weight: bold; font-family: 'Helvetica Neue', sans-serif
+}
+
+.wd-rnd-icon-80{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+
 }
 

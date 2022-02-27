@@ -2,6 +2,7 @@ const PostSummaryItem = (post) => {
     return(`
 
         <div class="wd-c-story-container wd-text-regular p-3">
+        
              <div>
                 <span class="wd-c-grey-reg-text"> ${post.topic}</span>
                 <br>
