@@ -1,8 +1,8 @@
 
 
 import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
-import WhoToFollowList from "../WhoToFollowList";
-import NavigationSidebar from "../NavigationSidebar";
+import WhoToFollowList from "../WhoToFollowList/index";
+import NavigationSidebar from "../NavigationSidebar/index";
 import NavigationSidebarSm from "../NavigationSidebar/NavigationSidebarSm";
 
 const active = "explore";

@@ -1,7 +1,7 @@
-import PostSummaryList from "../PostSummaryList";
+import PostSummaryList from "../PostSummaryList/index";
 import HomeComponent from "./HomeComponent.js";
-import NavigationSidebar from "../NavigationSidebar";
-import NavigationSidebarSm from "../NavigationSidebar/NavigationSidebarSm";
+import NavigationSidebar from "../NavigationSidebar/index.js";
+import NavigationSidebarSm from "../NavigationSidebar/NavigationSidebarSm.js";
 const active = "home";
 
 (function ($) {
