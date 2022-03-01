@@ -1,3 +1,4 @@
+import NavigationSidebarSm from "../NavigationSidebar/NavigationSidebarSm.js";
 
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
@@ -6,8 +7,11 @@ import WhoToFollowList from "../WhoToFollowList";
 (function ($) {
     $('#wd-explore').append(`
         <div class="row mt-2">
-        <div class="col-2 col-md-2 col-lg-2 col-xl-2 p-0">
+        <div class="col-xl-2 d-none d-xl-block p-0 m-0">
             ${NavigationSidebar()}
+        </div>
+        <div class="col-1 col-sm-2 col-m-1 col-lg-1 d-xl-none p-0 ps-2 pe-2">
+            ${NavigationSidebarSm()}
         </div>
         <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10 p-0 ps-2 pe-2">
             ${ExploreComponent()}
