@@ -29,7 +29,7 @@ const NavigationSidebar = (active) => {
                     
                 
                 <a class="list-group-item" href="../html/more.html">
-                    <div class="fa-stack" style="margin: -9px">
+                    <div class="fa-stack" style="margin: -12px">
                         <i class="fas fa-circle fa-stack-1x"><i class="fas fa-ellipsis-h fa-stack-1x small" style="color: black; font-size: .65em"></i></i>
                     </div><span style="font-family: 'Helvetica Neue', sans-serif"> More</a>     
              
