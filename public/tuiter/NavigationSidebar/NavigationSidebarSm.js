@@ -8,7 +8,7 @@ const NavigationSidebarSm = (active) => {
                 <a class="list-group-item active" href="../HomeScreen/index.html">
                     <i class="fas fa-home" ></i> </a>
                     
-                <a class="list-group-item " aria-current="true" href="../ExploreScreen/index.html">
+                <a class="list-group-item " href="../ExploreScreen/index.html">
                     <i class="fas fa-hashtag"></i> </a>
                     
                 <a class="list-group-item" href="../html/notifications.html">
@@ -49,7 +49,7 @@ const NavigationSidebarSm = (active) => {
                 <a class="list-group-item" href="../HomeScreen/index.html">
                     <i class="fas fa-home" ></i> </a>
                     
-                <a class="list-group-item active" aria-current="true" href="../ExploreScreen/index.html">
+                <a class="list-group-item active" href="../ExploreScreen/index.html">
                     <i class="fas fa-hashtag"></i> </a>
                     
                 <a class="list-group-item" href="../html/notifications.html">
