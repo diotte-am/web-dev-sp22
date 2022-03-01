@@ -10,10 +10,10 @@ const active = "home";
         <div class="col-xl-2 d-none d-xl-block p-0 m-0">
             ${NavigationSidebar(active)}
         </div>
-        <div class="col-1 col-sm-2 col-m-1 col-lg-1 d-xl-none p-0 ps-2 pe-2">
+        <div class="col-1 col-sm-2 col-m-1 col-lg-1 d-xl-none ps-1 pe-2" style="min-width: 75px">
             ${NavigationSidebarSm(active)}
         </div>
-        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-11 p-0">
+        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10 p-2">
             ${HomeComponent()}
         </div>
             
@@ -23,4 +23,3 @@ const active = "home";
         </div>
     `);
 })($);
-
