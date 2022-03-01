@@ -1,8 +1,9 @@
-import NavigationSidebarSm from "../NavigationSidebar/NavigationSidebarSm.js";
 
-import NavigationSidebar from "../NavigationSidebar/index.js";
+
 import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
 import WhoToFollowList from "../WhoToFollowList";
+import NavigationSidebar from "../NavigationSidebar";
+import NavigationSidebarSm from "../NavigationSidebar/NavigationSidebarSm";
 
 const active = "explore";
 
