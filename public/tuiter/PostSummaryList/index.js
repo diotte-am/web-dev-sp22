@@ -1,4 +1,4 @@
-import exploreItems from "posts.js";
+import exploreItems from "./posts.js"
 import PostSummaryItem from "PostSummaryItem.js";
 
 const PostSummaryList = () => {
