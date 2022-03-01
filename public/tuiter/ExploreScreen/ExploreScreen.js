@@ -3,6 +3,7 @@ import NavigationSidebarSm from "../NavigationSidebar/NavigationSidebarSm.js";
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
 import WhoToFollowList from "../WhoToFollowList";
+
 const active = "explore";
 
 (function ($) {
