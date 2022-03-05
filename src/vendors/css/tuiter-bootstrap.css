@@ -1,0 +1,95 @@
+.wd-image-margin {
+    margin: 1rem auto;
+    position: relative;
+}
+
+.wd-image-text {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.wd-text-regular {
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: normal;
+    padding: 1px;
+}
+
+.fa-inverse.small{
+    font-size: 0.5em;
+}
+
+.wd-pill-border-active{
+    border-left: 1px lightgray solid;
+    border-right: 1px lightgray solid;
+    border-top: 1px lightgray solid;
+    margin-top: 12px;
+}
+
+.wd-pill-border-inactive{
+    border-bottom: 1px lightgray solid;
+    margin-top: 12px;
+}
+
+.wd-story-container{
+    border: 1px lightgray solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+.wd-grey-reg-text{
+    color: grey;
+    font-weight: normal;
+}
+
+.wd-black-bd-text{
+    color: black;
+    font-weight: bold;
+}
+
+.wd-rnd-icon-90{
+    width: 90px;
+    height: 90px;
+    border-radius: 25px;
+}
+
+.wd-padding-6-12{
+    padding: 6px 12px
+}
+
+.wd-padding-LR-6{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.wd-rnd-icon-50{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 12px;
+}
+
+.wd-follow-container{
+    border: 1px lightgray solid;
+    display: flex;
+    padding: 1px;
+}
+
+.wd-follow-button{
+    display:flex;
+    flex: available;
+    justify-content: right;
+}
+
+.wd-float-right{
+    float: right;
+}
+
+.wd-rounded-rect{
+    border-radius: 25px;
+}
+

@@ -1,6 +1,15 @@
+import './vendors/bootstrap/bootstrap.min.css';
+import './vendors/css/tuiter-bootstrap.css';
+import './vendors/Font-Awesome-5.x/css/all.css';
+import './vendors/css/explore.css';
+import HelloWorld from "./components/HelloWorld";
+
 function App() {
   return (
-      <h1>Hello World!</h1>
+      <div className="container">
+        <HelloWorld/>
+      </div>
+
   );
 }
 export default App;

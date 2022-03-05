@@ -1,0 +1,93 @@
+.wd-color-override{
+    background-color: black;
+    color: gray;
+}
+
+.wd-c-story-container{
+    border-left: 1px #1e2023 solid;
+    border-right: 1px #1e2023 solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-c-story-container-headline{
+    border: 1px #1e2023 solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-c-grey-reg-text{
+    color: #60696f;
+    font-weight: normal;
+}
+
+.wd-c-white-bd-text{
+    color: white;
+    font-weight: bold;
+}
+
+.wd-follow-container.wd-color-override{
+    border: none;
+    background-color: #1e2023;
+}
+
+.wd-c-story-container.wd-color-override{
+    background-color: #1e2023;
+}
+
+.wd-icon-color-override{
+    color: #d4d4d4;
+}
+
+.list-group-item.wd-bg-color-override{
+    background-color: black;
+}
+
+.active.wd-color-override{
+    border: none;
+}
+
+.wd-small{
+    font-size: 0.5em;
+}
+
+.nav-link.active.wd-color-override{
+    background-color: black;
+    color: #d6d6d6;
+    border: none;
+    font-weight: bold
+}
+
+.nav-link.wd-color-override{
+    color: #5d666c;
+    font-weight: bold
+}
+
+.wd-icon-color-override-dk{
+    color: #5d656c
+}
+
+.btn-primary.wd-color-override{
+    border-radius: 25px; background-color: #d6d6d6; color: black; border: none; font-weight: bold; font-family: 'Helvetica Neue', sans-serif
+}
+
+.wd-rnd-icon-80{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+
+}
+
+
+.wd-white-text{
+    color: white;
+
+}
+
+.wd-grey-border{
+    border: #1e2023 1px solid
+}
+
+.wd-active{
+
+}
