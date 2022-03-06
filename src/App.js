@@ -6,16 +6,26 @@ import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/Labs";
 import Tuiter from "./components/Tuiter";
 import React from "react";
+import {BrowserRouter, Route} from "react-router-dom";
 
 
 
 function App() {
   return (
-      <div className="container">
-        <HelloWorld/>
-          <Labs/>
-          <Tuiter/>
-      </div>
+      <BrowserRouter>
+          <div className="container">
+              <Route path={"/hello"} exact={true}>
+                  <HelloWorld/>
+              </Route>
+              <Route path={["/", "/labs"]} exact={true}>
+                  <Labs/>
+              </Route>
+              <Route path={"/tuiter"} exact={true}>
+                  <Tuiter/>
+              </Route>
+          </div>
+      </BrowserRouter>
+
 
   );
 }
