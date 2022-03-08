@@ -1,0 +1,34 @@
+import React from "react";
+
+
+
+const WhoToFollowListItem = ({
+
+        who = {
+            avatarIcon: '/tuiter/image/virgin-1.svg',
+            userName: 'NASA',
+            handle: 'NASA',
+        }
+    }) => {
+    return(
+
+        <li className="list-group-item d-grid gap-2 d-flex row col-10">
+            <div className="col-2 align-items-start me-0 pe-0 pb-0">
+                <img src={who.avatarIcon} style={{width: "50px"}}/>
+            </div>
+
+
+            <div className="col-5 ">
+                <span className="wd-c-white-bd-text">{who.userName} <i className="fas fa-check-circle"> </i></span>
+                    <div className="wd-grey-reg-text">@{who.handle} </div>
+            </div>
+            <div className="col-2">
+                <div className="btn btn-primary align-items-end " style={{borderRadius: "25px", border: "none", fontWeight: "bold"}} >
+                    <span>Follow</span>
+                </div>
+            </div>
+        </li>
+
+    )
+}
+export default WhoToFollowListItem;

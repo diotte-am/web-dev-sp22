@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
+import WhoToFollowListItem from "./WhoToFollowList/WhoToFollowListItem";
 
 const Tuiter = () => {
     return(
@@ -13,6 +14,7 @@ const Tuiter = () => {
                 Labs
             </Link>
             <NavigationSidebar active="home"/>
+            <WhoToFollowListItem/>
         </>
     )
 };
