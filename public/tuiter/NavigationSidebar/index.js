@@ -35,7 +35,7 @@ const NavigationSidebar = (active) => {
              
             </div>
             
-            <div class="d-grid ps-2 pe-2">
+            <div class="d-grid ps-2 pe-2 color">
                 <a href="../html/tuit.html"
                    class="btn btn-primary btn-block rounded-pill">
                     Tweet</a>
