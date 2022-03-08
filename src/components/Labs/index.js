@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import Classes from "./Classes";
+import Styles from "./../Styles/index";
+import ConditionalOutput from "./ConditionalOutput";
 
 const Labs = () => {
     return(
@@ -12,6 +14,8 @@ const Labs = () => {
             <Link to="/tuiter">
                 Tuiter
             </Link>
+            <ConditionalOutput/>
+            <Styles/>
             <Classes/>
 
         </>
