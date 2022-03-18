@@ -2,14 +2,7 @@ import React from "react";
 
 
 
-const WhoToFollowListItem = ({
-
-        who = {
-            avatarIcon: '/tuiter/image/virgin-1.svg',
-            userName: 'NASA',
-            handle: 'NASA',
-        }
-    }) => {
+const WhoToFollowListItem = ({who}) => {
     return(
 
         <li className="list-group-item d-grid gap-2 d-flex row col-10">
