@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList";
-import PostSummaryItem from "./PostSummaryList/PostSummaryItem";
+import PostSummaryList from "./PostSummaryList";
 
 const Tuiter = () => {
     return(
@@ -16,7 +16,8 @@ const Tuiter = () => {
             </Link>
             <NavigationSidebar active="home"/>
             <WhoToFollowList/>
-            <PostSummaryItem/>
+            <PostSummaryList/>
+
         </>
     )
 };

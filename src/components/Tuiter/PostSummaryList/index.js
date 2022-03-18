@@ -1,15 +1,12 @@
 import PostSummaryItem from "./PostSummaryItem.js";
-import posts from "./posts";
+import post from "./post.json"
 import React from "react";
 
-const PostSummaryList = (
-
-
-) => {
+const PostSummaryList = () => {
     return(
         <ul>
             {
-                posts.map(post => {
+                post.map(post => {
                     return(<PostSummaryItem post={post}/>
                     );
                 })
