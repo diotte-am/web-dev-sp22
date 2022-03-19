@@ -21,10 +21,10 @@ const NavigationSidebar = (
 
     return(
         <div className='list-group m-0 p-2'>
-                <a className='list-group-item'>
 
+            <a className='list-group-item'>
             <div className='' style={toolText}>
-                <i className='fas fa-twitter '><i className='' ></i></i>
+                <i className='fab fa-twitter'><i className='' ></i></i>
                 <span style={toolText}> </span></div></a>
 
 

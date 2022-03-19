@@ -1,0 +1,19 @@
+[
+  { "name": "For you",
+    "link": "../../../tuiter/html/trending.html",
+    "active": "active"},
+
+  { "name": "Trending",
+    "link": "../../../tuiter/html/news.html",
+    "active": ""},
+
+  { "name": "Sports",
+    "link": "../../../tuiter/html/sports.html",
+    "active": ""},
+
+  {
+    "name": "Entertainment",
+    "link": "../../../tuiter/html/entertainment.html",
+    "active": ""
+  }
+]
