@@ -3,7 +3,7 @@ export default exploreItems = [
     {   topic: 'Elon Musk',
         userName: '@elonmusk',
         time: '23h',
-        title: 'Amazing show about <span class="text-primary">@inspiration</span> 4x mission!',
+        title: 'Amazing show about <span className="text-primary">@inspiration</span> 4x mission!',
         image:"../image/inspiration4.png",
         avatarImage: '../image/elon.png',
         subhead: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',

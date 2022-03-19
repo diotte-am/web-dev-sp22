@@ -2,14 +2,15 @@
 {   "topic": "Elon Musk",
 "userName": "@elonmusk",
 "time": "23h",
-"title": "Amazing show about <span className='text-primary'>@inspiration</span> 4x mission!",
+"title": "Amazing show about <a href='#'> @inspiration </a> 4x mission!",
 "image":"/tuiter/image/inspiration4.png",
 "avatarImage": "/tuiter/image/elon.png",
 "subhead": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
-"details": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...<br><i class='fas fa-link'><span class='wd-text-regular wd-c-grey-reg-text'>netflix.com</span></i>",
+"details": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
 "comments": "4.2k",
 "retweets": "3.5k",
-"likes": "37.5k"},
+"likes": "37.5k",
+"link": "netflix.com"},
 
 {   "topic": "New York Post",
 "userName": "@nypost",
@@ -21,6 +22,7 @@
 "details": "",
 "comments": "965",
 "retweets": "2.4k",
-"likes": "4k"}
+"likes": "4k",
+"link":  ""}
 ]
 

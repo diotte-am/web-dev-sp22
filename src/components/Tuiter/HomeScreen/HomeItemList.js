@@ -1,6 +1,7 @@
 import React from "react";
 import HomeItem from "./HomeItem";
 import posts from "./posts.json";
+import HomeItemNoText from "./HomeItemNoText";
 
 
 const HomeItemList = () => {
@@ -9,7 +10,7 @@ const HomeItemList = () => {
              {
         posts.map(posts => {
             if (posts.subhead === ""){
-                return (HomeItem(posts));
+                return (HomeItemNoText(posts));
             } else{
                 return(HomeItem(posts));
             }

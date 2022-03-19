@@ -15,11 +15,15 @@ const HomeItem = (post) => {
                     <span className="wd-c-white-bd-text">{post.topic} <i class="fas fa-check-circle"></i></span>
 
                     <span className="wd-c-grey-reg-text">{post.userName} </span> <span class="wd-c-grey-reg-text"> &bull; {post.time}</span>
-                    <div className="wd-white-text" style={{lineHeight: "1.5em"}}>{post.title}</div>
+                    <div className="wd-white-text" style={{lineHeight: "1.5em"}}>
+                        <div dangerouslySetInnerHTML={{__html:post["title"]}}></div>
+
+                    </div>
                     <div className="row p-3 wd-grey-border" style={{borderRadius: "15px"}}>
                                 <img width="auto" src={post.image}/>
                                 <div className="wd-white-text" >{post.subhead}</div>
                                 <div className="wd-grey-normal-text">{post.details}</div>
+                        <i className='fas fa-link'><span className='wd-text-regular wd-c-grey-reg-text'> {post.link}</span></i>
                     </div>
                 </div>
                 </div>
