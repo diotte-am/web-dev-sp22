@@ -5,6 +5,7 @@ import WhoToFollowList from "./WhoToFollowList";
 import PostSummaryList from "./PostSummaryList";
 import ExploreComponent from "./ExploreScreen/ExploreComponent";
 import ExploreScreen from "./ExploreScreen";
+import HomeItemList from "./HomeScreen/HomeItemList";
 
 const Tuiter = () => {
     return(
@@ -17,6 +18,7 @@ const Tuiter = () => {
                 Labs
             </Link>
             <ExploreScreen/>
+            <HomeItemList/>
         </>
     )
 };
