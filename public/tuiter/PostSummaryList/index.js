@@ -1,20 +1,13 @@
+import exploreItems from "./posts.js"
 import PostSummaryItem from "./PostSummaryItem.js";
-import posts from "./posts";
-import React from "react";
 
-const PostSummaryList = (
-
-
-) => {
-    return(
-        <ul>
-            {
-                posts.map(post => {
-                    return(<PostSummaryItem post={post}/>
-                    );
-                })
-            }
-        </ul>
-    );
+const PostSummaryList = () => {
+    return(`
+             ${
+        exploreItems.map(post => {
+            return(PostSummaryItem(post));
+        }).join(' ')
+    }
+    `);
 }
 export default PostSummaryList;
