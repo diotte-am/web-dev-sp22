@@ -7,7 +7,7 @@ const PostSummaryItem = (
     return(
 
 
-        <div className="wd-c-story-container wd-grey-border wd-text-regular p-3">
+        <div className="wd-c-story-container wd-grey-border wd-text-regular p-3 list-group-item">
 
              <div>
                 <div className="wd-c-grey-reg-text"> {post.topic}</div>

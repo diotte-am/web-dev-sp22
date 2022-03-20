@@ -1,13 +1,20 @@
 import React from "react";
 
 const ExploreTab = (
-    {tabs}
+    {tabs,
+    active="forYou"}
 
 ) => {
     return(
 
-            <li className="nav-item d-none d-sm-none d-md-inline wd-color-override">
-                <a className="nav-link wd-color-override"  href={tabs.link}>{tabs.name}</a>
+            <li className="nav-item d-none d-sm-none d-md-inline ">
+
+                <a className={`nav-link 
+                ${active === tabs.active ? 'active' : ''}
+                 "`} href={tabs.link}>{tabs.name}</a>
+
+
+
             </li>
 
     )
