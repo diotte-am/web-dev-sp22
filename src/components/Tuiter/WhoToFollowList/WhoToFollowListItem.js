@@ -20,6 +20,8 @@ const WhoToFollowListItem = ({who}) => {
                     <span>Follow</span>
                 </div>
             </div>
+
+
         </li>
 
     )
