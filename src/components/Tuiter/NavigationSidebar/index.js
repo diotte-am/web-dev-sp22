@@ -1,8 +1,9 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
-        active = 'explore'
+        active = 'home'
     }) => {
     const toolText = {
         fontFamily: "sans-serif",
@@ -20,30 +21,30 @@ const NavigationSidebar = (
     };
 
     return(
-        <div className='list-group m-0 p-2'>
+        <div className='list-group m-0 p-2 '>
 
-            <a className='list-group-item'>
+            <Link to="/" className='list-group-item'>
             <div className='' style={toolText}>
-                <i className='fab fa-twitter'><i className='' ></i></i>
-                <span style={toolText}> </span></div></a>
+                <i className='fab fa-twitter '><i className='' ></i></i>
+                <span style={toolText}> </span></div></Link>
 
 
 
-            <a className={`list-group-item
+            <Link to="/tuiter/home" className={`list-group-item
         ${active === 'home' ? 'active' : ''}`}>
 
             <div className='' style={toolText}>
-                <i className='fas fa-home '><i className='' ></i></i>
-                <span style={toolText}> Home</span></div></a>
+                <i className='fas fa-home'><i className='' ></i></i>
+                <span className='d-none d-xl-inline' style={toolText}> Home</span></div></Link>
 
 
 
-                <a className={`list-group-item
+                <Link to="/tuiter/explore" className={`list-group-item
         ${active === 'explore' ? 'active' : ''}`}>
 
                     <div className='' style={toolText}>
                         <i className='fas fa-hashtag '><i className='' ></i></i>
-                        <span style={toolText}> Explore</span></div></a>
+                        <span className='d-none d-xl-inline' style={toolText}> Explore</span></div></Link>
 
 
 
@@ -52,7 +53,7 @@ const NavigationSidebar = (
 
             <div className='' style={toolText}>
                 <i className='fas fa-bell '><i className='' ></i></i>
-                <span style={toolText}> Notifications</span></div></a>
+                <span className='d-none d-xl-inline' style={toolText}> Notifications</span></div></a>
 
 
 
@@ -61,7 +62,7 @@ const NavigationSidebar = (
 
                 <div className='' style={toolText}>
                     <i className='fas fa-envelope '><i className='' ></i></i>
-                    <span style={toolText}> Messages</span></div></a>
+                    <span className='d-none d-xl-inline' style={toolText}> Messages</span></div></a>
 
 
 
@@ -70,7 +71,7 @@ const NavigationSidebar = (
 
                 <div className='' style={toolText}>
                     <i className='fas fa-bookmark '><i className='' ></i></i>
-                    <span style={toolText}> Bookmarks</span></div></a>
+                    <span className='d-none d-xl-inline' style={toolText}> Bookmarks</span></div></a>
 
 
 
@@ -79,7 +80,7 @@ const NavigationSidebar = (
 
             <div className='' style={toolText}>
                 <i className='fas fa-list '><i className='' ></i></i>
-                <span style={toolText}> Lists</span></div></a>
+                <span className='d-none d-xl-inline' style={toolText}> Lists</span></div></a>
 
 
 
@@ -88,20 +89,20 @@ const NavigationSidebar = (
 
                 <div className='' style={toolText}>
                     <i className='fas fa-user '><i className='' ></i></i>
-                    <span style={toolText}> User</span></div></a>
+                    <span className='d-none d-xl-inline' style={toolText}> User</span></div></a>
 
 
             <a className={`list-group-item
-        ${active === 'explore' ? 'active' : ''}`}>
+        ${active === 'more' ? 'active' : ''}`}>
 
                 <div className='fa-stack' style={toolTextStacked}>
                     <i className='fas fa-circle fa-stack-1x'><i className='fas fa-ellipsis-h fa-stack-1x small' style={{color: "black", fontSize: ".65em"}}></i></i>
-                <span style={textStacked}> More</span></div></a>
+                <span className='d-none d-xl-inline' style={textStacked}> More</span></div></a>
 
 
-        <div className="d-grid mt-3">
+        <div className="d-grid  mt-3">
             <a
-               className="btn btn-primary btn-block rounded-pill">
+               className="btn btn-primary btn-block rounded-pill ps-2 pe-2">
                 Tweet</a>
         </div>
 

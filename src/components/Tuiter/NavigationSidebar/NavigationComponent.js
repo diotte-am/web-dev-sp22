@@ -12,7 +12,7 @@ const NavigationComponent = (
     "stackedIconStyle": "{color: \"black\", fontSize: \".65em\"}",
     "name": "More"
 
-    }, active}
+    }}
 
 ) => {
     const toolText = {
