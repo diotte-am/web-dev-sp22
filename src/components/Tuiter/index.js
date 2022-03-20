@@ -18,7 +18,6 @@ const Tuiter = () => {
                 Labs
             </Link>
             <ExploreScreen/>
-            <HomeItemList/>
         </>
     )
 };

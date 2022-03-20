@@ -7,6 +7,8 @@ import Labs from "./components/Labs/index.js";
 import Tuiter from "./components/Tuiter/index.js";
 import React from "react";
 import {BrowserRouter, Route} from "react-router-dom";
+import ExploreScreen from "./components/Tuiter/ExploreScreen";
+import HomeScreen from "./components/Tuiter/HomeScreen";
 
 
 
@@ -23,6 +25,15 @@ function App() {
               <Route path={"/tuiter"} exact={true}>
                   <Tuiter/>
               </Route>
+              <Route path={"/tuiter/explore"} exact={true}>
+                  <ExploreScreen/>
+              </Route>
+              <Route path={"/tuiter/home"} exact={true}>
+                  <HomeScreen/>
+              </Route>
+
+
+
           </div>
       </BrowserRouter>
 
