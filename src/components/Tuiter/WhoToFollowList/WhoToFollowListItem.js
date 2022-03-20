@@ -6,12 +6,12 @@ const WhoToFollowListItem = ({who}) => {
     return(
 
         <li className="list-group-item d-grid gap-2 d-flex row col-10">
-            <div className="col-2 align-items-start me-0 pe-0 pb-0">
+            <div className="col-2 align-items-start ps-0">
                 <img src={who.avatarIcon} style={{width: "50px"}}/>
             </div>
 
 
-            <div className="col-5 ">
+            <div className="col-5 ps-1">
                 <span className="wd-c-white-bd-text">{who.userName} <i className="fas fa-check-circle"> </i></span>
                     <div className="wd-grey-reg-text">@{who.handle} </div>
             </div>
