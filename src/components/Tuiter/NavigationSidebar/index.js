@@ -30,7 +30,7 @@ const NavigationSidebar = (
 
 
 
-            <Link to="/tuiter/home" className={`list-group-item
+            <Link to="/tuiter" className={`list-group-item
         ${active === 'home' ? 'active' : ''}`}>
 
             <div className='' style={toolText}>
