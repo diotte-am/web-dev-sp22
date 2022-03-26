@@ -14,8 +14,8 @@
     "attachments": {
       "video": "unKvMC3Y1kI"
     },
-    "logoImage": "../../../images/react-blue.png",
-    "avatarImage": "../../../images/react-blue.png",
+    "logoImage": "/tuiter/image/react-logo.png",
+    "avatarImage": "/tuiter/image/react-logo.png",
     "stats": {
       "comments": 123,
       "retuits": 234,
@@ -35,11 +35,11 @@
     "title": "",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "attachments": {
-      "image": "../images/starship.png"
+      "image": "/tuiter/image/starship.png"
     },
     "time": "last month",
-    "logoImage": "../../../images/node.png",
-    "avatarImage": "../../../images/node.png",
+    "logoImage": "/tuiter/image/nodejs.png",
+    "avatarImage": "/tuiter/image/nodejs.png",
     "tuits": "120K",
     "stats": {
       "comments": 123,
@@ -61,8 +61,8 @@
     "time": "1 day",
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "logoImage": "../../../images/js.png",
-    "avatarImage": "../../../images/js.png",
+    "logoImage": "/tuiter/image/javascript.png",
+    "avatarImage": "/tuiter/image/javascript.png",
     "tuits": "123K",
     "stats": {
       "comments": 123,
@@ -83,8 +83,8 @@
     "title": "jQuery",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "time": "last week",
-    "logoImage": "../../../images/jquery.png",
-    "avatarImage": "../../../images/jquery.png",
+    "logoImage": "/tuiter/image/jquery.png",
+    "avatarImage": "/tuiter/image/jquery.png",
     "tuits": "122K",
     "stats": {
       "comments": 123,
@@ -105,8 +105,8 @@
     "title": "",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "time": "last month",
-    "logoImage": "../../../images/node.png",
-    "avatarImage": "../../../images/node.png",
+    "logoImage": "/tuiter/image/nodejs.png",
+    "avatarImage": "/tuiter/image/nodejs.png",
     "tuits": "120K",
     "stats": {
       "comments": 123,

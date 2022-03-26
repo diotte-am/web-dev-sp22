@@ -8,7 +8,7 @@ const TuitList = () => {
         <ul>
             {
                 tuits.map(tuit => {
-                    return(<TuitListItem tuits={tuit}/>
+                    return(<TuitListItem key={tuit._id} tuits={tuit}/>
                     );
                 })
             }

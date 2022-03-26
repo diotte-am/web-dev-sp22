@@ -8,8 +8,9 @@ const TuitListItem = ({tuits}) => {
                 <div className="row col-12 pt-2 pb-2">
                     <div className="row">
                         <div className="col-2 ps-4">
-                            <img src={tuits.image} className="wd-rnd-icon-80"/>
+                            <img src={tuits.logoImage} className="wd-rnd-icon-80"/>
                         </div>
+
 
                         <div className="col-10 ps-4" >
                             <span className="wd-c-white-bd-text">{tuits.topic} <i class="fas fa-check-circle"></i></span>
@@ -38,17 +39,17 @@ const TuitListItem = ({tuits}) => {
 
                         <div className="col" >
                             <a href="#"><i className="far fa-comment pe-2 wd-grey-reg-text"  aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.comments}</span></i></a>
+                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats.comments}</span></i></a>
                         </div>
 
                         <div className="col">
                             <a href="#"><i className="fa fa-retweet wd-grey-reg-text" aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.retweets}</span></i></a>
+                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats.retuits}</span></i></a>
                         </div>
 
                         <div className="col">
                             <a href="#"><i className="far fa-heart wd-grey-reg-text" aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.likes}</span></i></a>
+                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats.likes}</span></i></a>
                         </div>
 
                         <div className="col">
