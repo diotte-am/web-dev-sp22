@@ -21,7 +21,7 @@ const NavigationSidebar = (
     };
 
     return(
-        <div className='list-group m-0 p-2 '>
+        <div className='list-group m-0 p-0 '>
 
             <Link to="/" className='list-group-item'>
             <div className='' style={toolText}>
