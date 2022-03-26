@@ -21,13 +21,14 @@ function App() {
                                element={<Labs/>}/>
                         <Route path="hello"
                                element={<HelloWorld/>}/>
-                        <Route path="tuiter">
+                        <Route path="tuiter"
+                               element={<Tuiter/>}>
                             <Route index
-                                   element={<Tuiter/>}/>
+                                   element={<HomeScreen/>}/>
                             <Route path="explore"
                                    element={<ExploreScreen/>}/>
-
                         </Route>
+
                     </Route>
                 </Routes>
             </div>

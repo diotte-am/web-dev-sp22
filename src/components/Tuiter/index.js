@@ -2,15 +2,17 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {Outlet} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
+import whoReducer from "./Reducers/WhoReducer";
+import {createStore} from "redux";
+import {Provider} from "react-redux";
 import WhoToFollowList from "./WhoToFollowList";
-import PostSummaryList from "./PostSummaryList";
-import ExploreComponent from "./ExploreScreen/ExploreComponent";
-import ExploreScreen from "./ExploreScreen";
-import HomeItemList from "./HomeScreen/HomeItemList";
+const store = createStore(whoReducer);
+
+
 
 const Tuiter = () => {
     return(
-        <>
+        <Provider store={store}>
             <h1>Tuiter</h1>
             <Link to="/hello">
                 Hello
@@ -26,11 +28,11 @@ const Tuiter = () => {
                     <Outlet/>
                 </div>
                 <div className="d-none d-lg-block col-lg-4 col-xl-4">
-                    <h2>Who to follow</h2>
+                    <WhoToFollowList/>
                 </div>
             </div>
 
-        </>
+        </Provider>
     )
 };
 
