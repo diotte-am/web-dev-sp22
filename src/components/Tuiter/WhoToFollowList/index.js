@@ -3,7 +3,7 @@ import WhoToFollowListItem from "./WhoToFollowListItem.js";
 import {useSelector} from "react-redux";
 
 const WhoToFollowList = () => {
-    const who = useSelector((state) => state);
+    const who = useSelector(state => state.who);
     return(
         <ul className="list-group">
             <li className="list-group-item d-grid gap-2 d-flex row col-10 ps-1">
