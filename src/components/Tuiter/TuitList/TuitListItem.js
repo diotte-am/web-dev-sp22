@@ -2,12 +2,12 @@ import React from "react";
 
 const TuitListItem = ({tuits}) => {
     return(
-        <>
 
-            <div  className="pt-2 pb-2 wd-grey-border">
+
+            <li  className="list-group-item pt-2 pb-2">
                 <div className="row col-12 pt-2 pb-2">
                     <div className="row">
-                        <div className="col-2 ps-4">
+                        <div className="col-2">
                             <img src={tuits.logoImage} className="wd-rnd-icon-80"/>
                         </div>
 
@@ -20,11 +20,11 @@ const TuitListItem = ({tuits}) => {
                                 <div dangerouslySetInnerHTML={{__html:tuits["title"]}}></div>
 
                             </div>
+                            {tuits.tuit}
                             <div className="row p-3 wd-grey-border" style={{borderRadius: "15px"}}>
                                 <img width="auto" src={tuits.image}/>
                                 <div className="wd-white-text" >{tuits.subhead}</div>
                                 <div className="wd-grey-normal-text">{tuits.details}</div>
-                                <i className='fas fa-link'><span className='wd-text-regular wd-c-grey-reg-text'> {tuits.link}</span></i>
                             </div>
                         </div>
                     </div>
@@ -60,8 +60,8 @@ const TuitListItem = ({tuits}) => {
                     </div>
                 </div>
 
-            </div>
-        </>
+            </li>
+
     )
 }
 

@@ -5,7 +5,7 @@ import React from "react";
 const WhoToFollowListItem = ({who}) => {
     return(
 
-        <li className="list-group-item d-grid gap-2 d-flex row">
+        <li className="list-group-item d-grid gap-2 d-flex row col-10">
             <div className="col-2 align-items-start ps-0">
                 <img src={who.avatarIcon} style={{width: "50px"}}/>
             </div>
