@@ -1,5 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
+import TuitStats from "../TuitStats";
 
 const TuitListItem = ({tuits}) => {
     const dispatch = useDispatch();
@@ -36,7 +37,7 @@ const TuitListItem = ({tuits}) => {
                         <div className="col-1 pe-0">
                             <i onClick={() =>
                                 deleteTuit(tuits)}
-                               className='fas fa-times pe-0'><i className='' ></i></i>
+                               className='fas fa-times pe-0'></i>
                         </div>
 
                     </div>
@@ -60,9 +61,11 @@ const TuitListItem = ({tuits}) => {
                         </div>
 
                         <div className="col">
-                            <a href="#"><i className="far fa-heart wd-grey-reg-text" aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats.likes}</span></i></a>
+                            <TuitStats tuit={tuits}/>
+                                <span className="wd-text-regular wd-grey-reg-text"></span>
+
                         </div>
+
 
                         <div className="col">
                             <a href="#"><i className="fa fa-upload wd-grey-reg-text" aria-hidden="true">
