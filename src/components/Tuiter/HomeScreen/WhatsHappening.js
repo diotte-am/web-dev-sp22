@@ -1,10 +1,16 @@
 import React, {useState} from "react";
+import {useDispatch} from "react-redux";
+
+
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening]
         = useState('');
+    const dispatch = useDispatch();
     const tuitClickHandler = () => {
-        console.log(whatsHappening);
+        dispatch({type: 'create-tuit',
+            tuit: whatsHappening
+        });
     }
     return (
         <div className="container pt-1 col-12">

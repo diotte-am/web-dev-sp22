@@ -1,18 +1,24 @@
 import React from "react";
+import {useDispatch} from "react-redux";
 
 const TuitListItem = ({tuits}) => {
+    const dispatch = useDispatch();
+    const deleteTuit = (tuit) => {
+        dispatch({type: 'delete-tuit', tuit})
+    };
     return(
+    <li  className="list-group-item pt-2 pb-2 pe-0">
+
+                <div className="row col-12 pt-2 pb-2 pe-0">
 
 
-            <li  className="list-group-item pt-2 pb-2">
-                <div className="row col-12 pt-2 pb-2">
                     <div className="row">
                         <div className="col-2">
                             <img src={tuits.logoImage} className="wd-rnd-icon-80"/>
                         </div>
 
 
-                        <div className="col-10 ps-4" >
+                        <div className="col-9 ps-4" >
                             <span className="wd-c-white-bd-text">{tuits.topic} <i class="fas fa-check-circle"></i></span>
 
                             <span className="wd-c-grey-reg-text">{tuits.userName} </span> <span class="wd-c-grey-reg-text"> &bull; {tuits.time}</span>
@@ -21,12 +27,18 @@ const TuitListItem = ({tuits}) => {
 
                             </div>
                             {tuits.tuit}
-                            <div className="row p-3 wd-grey-border" style={{borderRadius: "15px"}}>
+                            <div className="row p-3" style={{borderRadius: "15px"}}>
                                 <img width="auto" src={tuits.image}/>
                                 <div className="wd-white-text" >{tuits.subhead}</div>
                                 <div className="wd-grey-normal-text">{tuits.details}</div>
                             </div>
                         </div>
+                        <div className="col-1 pe-0">
+                            <i onClick={() =>
+                                deleteTuit(tuits)}
+                               className='fas fa-times pe-0'><i className='' ></i></i>
+                        </div>
+
                     </div>
                 </div>
 
