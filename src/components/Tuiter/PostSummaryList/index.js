@@ -8,14 +8,14 @@ const PostSummaryList = (
     }
 ) => {
     return(
-        <ul>
+<li className="container pt-1 col-12 mt-0" >
             {
                 post.map(post => {
                     return(<PostSummaryItem post={post} active={active}/>
                     );
                 })
             }
-        </ul>
+</li>
     );
 }
 export default PostSummaryList;

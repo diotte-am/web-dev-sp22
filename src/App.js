@@ -9,6 +9,7 @@ import React from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import ExploreScreen from "./components/Tuiter/ExploreScreen";
 import HomeScreen from "./components/Tuiter/HomeScreen";
+import ProfileScreen from "./components/Tuiter/ProfileScreen";
 
 function App() {
     return (
@@ -24,9 +25,11 @@ function App() {
                         <Route path="tuiter"
                                element={<Tuiter/>}>
                             <Route index
-                                   element={<HomeScreen/>}/>
+                                   element={<HomeScreen active={"home"}/>}/>
                             <Route path="explore"
-                                   element={<ExploreScreen/>}/>
+                                   element={<ExploreScreen active={"explore"}/>}/>
+                            <Route path="profile"
+                                   element={<ProfileScreen active={"profile"}/>}/>
                         </Route>
 
                     </Route>

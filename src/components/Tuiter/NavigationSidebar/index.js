@@ -84,12 +84,12 @@ const NavigationSidebar = (
 
 
 
-            <a className={`list-group-item
-        ${active === 'user' ? 'active' : ''}`}>
+            <Link to="/tuiter/profile" className={`list-group-item
+        ${active === 'profile' ? 'active' : ''}`}>
 
                 <div className='' style={toolText}>
                     <i className='fas fa-user '><i className='' ></i></i>
-                    <span className='d-none d-xl-inline' style={toolText}> User</span></div></a>
+                    <span className='d-none d-xl-inline' style={toolText}> Profile</span></div></Link>
 
 
             <a className={`list-group-item
