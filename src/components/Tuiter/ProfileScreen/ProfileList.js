@@ -9,14 +9,14 @@ const ProfileList = (
     }
 ) => {
     return(
-        <li className="container pt-1 col-12 mt-0" >
+        <ul className="container pt-1 col-12 mt-0" >
             {
                 profileData.map(profileData => {
                     return(<ProfileListItem profileData={profileData} active={active}/>
                     );
                 })
             }
-        </li>
+        </ul>
     );
 }
 export default ProfileList;
