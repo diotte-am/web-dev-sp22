@@ -26,7 +26,7 @@ const ProfileListItem = (
 
 
                     <div className="col-9">
-                        <img src={profileData.profilePicture} className="wd-rnd-icon-12"/>
+                        <img alt="profile" src={profileData.profilePicture} className="wd-rnd-icon-12"/>
                         <div className="wd-c-white-bd-text"> {profileData.name}</div>
                         <span className="wd-c-grey-reg-text">@{profileData.handle} </span>
                     </div>

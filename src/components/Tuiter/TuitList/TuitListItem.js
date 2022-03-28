@@ -16,7 +16,7 @@ const TuitListItem = ({tuits}) => {
 
                     <div className="row">
                         <div className="col-2 ps-0">
-                            <img src={tuits.logoImage} className="wd-rnd-icon-50"/>
+                            <img alt="logo" src={tuits.logoImage} className="wd-rnd-icon-50"/>
                         </div>
 
 

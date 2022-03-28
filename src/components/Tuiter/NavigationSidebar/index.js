@@ -105,9 +105,9 @@ const NavigationSidebar = (
 
 
         <div className="d-grid  mt-3">
-            <a
+            <button
                className="btn btn-primary btn-block rounded-pill ps-2 pe-2">
-                Tweet</a>
+                Tweet</button>
         </div>
 
     </div>

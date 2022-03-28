@@ -9,7 +9,6 @@ import {Provider} from "react-redux";
 import WhoToFollowList from "./WhoToFollowList";
 import profileReducer from "./Reducers/ProfileReducer";
 
-import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 
 
