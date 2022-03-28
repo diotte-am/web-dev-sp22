@@ -7,6 +7,7 @@ const ProfileReducer = (state = profileData, action) => {
 
                return state.map(profile => {
                    profile.name = action.editName;
+                   profile.bio = action.editBio;
                })
 
          default:

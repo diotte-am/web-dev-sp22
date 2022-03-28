@@ -9,10 +9,12 @@ const EditProfileItem = (
 ) => {
     let [editName, setName]
         = useState('');
+    let [editBio, setBio]
+        = useState('');
     const dispatch = useDispatch();
     const editClickHandler = () => {
         dispatch({type: 'edit-profile',
-            editName
+            editName, editBio
         });
     }
     return(
@@ -67,7 +69,8 @@ const EditProfileItem = (
                         Bio
                     </div>
 
-                    <textarea type="bio" className="form-control " rows="5"  style={{color: "white", backgroundColor: "#070807", resize: "none"}} id="exampleFormControlInput1">
+                    <textarea type="bio" className="form-control " rows="5"  style={{color: "white", backgroundColor: "#070807", resize: "none"}} onChange={(event) =>
+                        setBio(event.target.value)}>
                         {profileData.bio}
                     </textarea>
 
