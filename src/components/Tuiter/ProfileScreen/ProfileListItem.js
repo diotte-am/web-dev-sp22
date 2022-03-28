@@ -7,12 +7,28 @@ const ProfileListItem = (
     return(
 
 
-        <div className="container wd-text-regular">
+        <div className="wd-text-regular">
             <div className="wd-c-white-bd-text"> {profileData.firstName} {profileData.lastName}</div>
             <div className="wd-c-grey-reg-text"> {profileData.tuitCount} Tuits</div>
-            <img src={profileData.bannerPicture} alt="banner"/>
-            <div className="container wd-text-regular">
-                <img src={profileData.profilePicture} className="wd-rnd-icon-80"/>
+            <img className="col-12" src={profileData.bannerPicture} alt="banner"/>
+
+
+                <div className="d-grid gap-2 d-flex row col-12">
+
+
+
+                    <div className="col-9">
+                        <img src={profileData.profilePicture} className="wd-rnd-icon-80"/>
+                    </div>
+                    <div className="col-2 align-items-end ps-0 pe-0 ms-4 mt-4">
+                        <button type="button" className="btn btn-outline-dark btn-sm"  style={{borderRadius: "45px", fontWeight: "bold", color: "white"}}>Edit Profile</button>
+                    </div>
+
+
+                </div>
+
+
+
 
                 <div className="wd-c-white-bd-text"> {profileData.firstName} {profileData.lastName}</div>
                 <span className="wd-c-grey-reg-text">@{profileData.handle} </span>
@@ -28,7 +44,7 @@ const ProfileListItem = (
                 </div>
             </div>
 
-        </div>
+
     )
 }
 export default ProfileListItem;
