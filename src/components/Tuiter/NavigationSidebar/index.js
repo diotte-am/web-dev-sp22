@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 const NavigationSidebar = (
     {
@@ -20,6 +20,8 @@ const NavigationSidebar = (
         margin: "2em"
     };
 
+    const location = useLocation();
+    console.log(location.pathname);
     return(
         <div className='list-group m-0 p-0 '>
 
@@ -31,7 +33,9 @@ const NavigationSidebar = (
 
 
             <Link to="/tuiter" className={`list-group-item
-        ${active === 'home' ? 'active' : ''}`}>
+        ${location.pathname === '/tuiter' ? 'active' : ''}
+         ${location.pathname === '/tuiter/' ? 'active' : ''}
+        `}>
 
             <div className='' style={toolText}>
                 <i className='fas fa-home'><i className='' ></i></i>
@@ -40,7 +44,7 @@ const NavigationSidebar = (
 
 
                 <Link to="/tuiter/explore" className={`list-group-item
-        ${active === 'explore' ? 'active' : ''}`}>
+        ${location.pathname === '/tuiter/explore' ? 'active' : ''}`}>
 
                     <div className='' style={toolText}>
                         <i className='fas fa-hashtag '><i className='' ></i></i>
@@ -48,56 +52,56 @@ const NavigationSidebar = (
 
 
 
-            <a className={`list-group-item
-        ${active === 'notifications' ? 'active' : ''}`}>
+            <Link to="/tuiter/notifications" className={`list-group-item
+        ${location.pathname === '/tuiter/notifications' ? 'active' : ''}`}>
 
             <div className='' style={toolText}>
                 <i className='fas fa-bell '><i className='' ></i></i>
-                <span className='d-none d-xl-inline' style={toolText}> Notifications</span></div></a>
+                <span className='d-none d-xl-inline' style={toolText}> Notifications</span></div></Link>
 
 
 
-            <a className={`list-group-item
-        ${active === 'messages' ? 'active' : ''}`}>
+            <Link to="/tuiter/messages" className={`list-group-item
+        ${location.pathname === '/tuiter/messages' ? 'active' : ''}`}>
 
                 <div className='' style={toolText}>
                     <i className='fas fa-envelope '><i className='' ></i></i>
-                    <span className='d-none d-xl-inline' style={toolText}> Messages</span></div></a>
+                    <span className='d-none d-xl-inline' style={toolText}> Messages</span></div></Link>
 
 
 
-            <a className={`list-group-item
-        ${active === 'bookmarks' ? 'active' : ''}`}>
+            <Link to="/tuiter/bookmarks" className={`list-group-item
+        ${location.pathname === '/tuiter/bookmarks' ? 'active' : ''}`}>
 
                 <div className='' style={toolText}>
                     <i className='fas fa-bookmark '><i className='' ></i></i>
-                    <span className='d-none d-xl-inline' style={toolText}> Bookmarks</span></div></a>
+                    <span className='d-none d-xl-inline' style={toolText}> Bookmarks</span></div></Link>
 
 
 
-            <a className={`list-group-item
-        ${active === 'lists' ? 'active' : ''}`}>
+            <Link to="/tuiter/lists" className={`list-group-item
+        ${location.pathname === '/tuiter/lists' ? 'active' : ''}`}>
 
             <div className='' style={toolText}>
                 <i className='fas fa-list '><i className='' ></i></i>
-                <span className='d-none d-xl-inline' style={toolText}> Lists</span></div></a>
+                <span className='d-none d-xl-inline' style={toolText}> Lists</span></div></Link>
 
 
 
             <Link to="/tuiter/profile" className={`list-group-item
-        ${active === 'profile' ? 'active' : ''}`}>
+        ${location.pathname === '/tuiter/profile' ?  'active' : ''}`}>
 
                 <div className='' style={toolText}>
                     <i className='fas fa-user '><i className='' ></i></i>
                     <span className='d-none d-xl-inline' style={toolText}> Profile</span></div></Link>
 
 
-            <a className={`list-group-item
-        ${active === 'more' ? 'active' : ''}`}>
+           <Link to= "/tuiter/more" className={`list-group-item
+        ${location.pathname === '/tuiter/more' ? 'active' : ''}`}>
 
                 <div className='fa-stack' style={toolTextStacked}>
                     <i className='fas fa-circle fa-stack-1x'><i className='fas fa-ellipsis-h fa-stack-1x small' style={{color: "black", fontSize: ".65em"}}></i></i>
-                <span className='d-none d-xl-inline' style={textStacked}> More</span></div></a>
+                    <span className='d-none d-xl-inline' style={textStacked}> More</span></div></Link>
 
 
         <div className="d-grid  mt-3">

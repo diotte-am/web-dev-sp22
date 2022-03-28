@@ -5,10 +5,20 @@ const ProfileReducer = (state = profileData, action) => {
     switch (action.type) {
         case 'edit-profile':
 
-               return state.map(profile => {
-                   profile.name = action.editName;
-                   profile.bio = action.editBio;
+             state.map(profile => {
+                 if(action.editName === ""){
+                     profile.name = profile.name;
+                 } else {
+                     profile.name = action.editName;
+                 }
+                 if(action.editName === ""){
+                     profile.bio = profile.bio
+                 } else {
+                     profile.bio = action.editBio;
+                 }
+
                })
+             return (state);
 
          default:
                 return(state);
