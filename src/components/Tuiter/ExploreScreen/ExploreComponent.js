@@ -33,7 +33,7 @@ const ExploreComponent = (
 
 
                             <li className="card ms-4 me-4 mb-0" style={{borderColor: '#1e2023', borderRadius: '0px'}}>
-                                <img className="card-img" src="/tuiter/image/Starship-Mk1-Day.jpg" style={{borderRadius: '0px'}} alt="SpaceX's Starship"/>
+                                <img className="card-img" src="/tuiter/image/starship.jpg" style={{borderRadius: '0px'}} alt="SpaceX's Starship"/>
                                 <div className="card-img-overlay text-white d-flex justify-content-start align-items-end">
                                     <h2 style={{marginBottom: '-8px'}}>SpaceX's Starship</h2>
                                 </div>

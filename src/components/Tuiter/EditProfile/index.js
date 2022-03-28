@@ -3,11 +3,11 @@ import EditProfileList from "./EditProfileList"
 
 
 
-const ProfileScreen = () => {
+const EditProfile = () => {
     return(
         <div>
             <EditProfileList />
         </div>
     )
 }
-export default EditProfileList;
+export default EditProfile;

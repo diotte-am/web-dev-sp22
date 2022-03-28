@@ -1,12 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
+import {useDispatch} from "react-redux";
 
 const EditProfileItem = (
     {profileData}
 
 
 ) => {
-
+    let [editName, setName]
+        = useState('');
+    const dispatch = useDispatch();
+    const editClickHandler = () => {
+        dispatch({type: 'edit-profile',
+            editName
+        });
+    }
     return(
         <>
 
@@ -25,8 +33,10 @@ const EditProfileItem = (
                     <div className="wd-c-white-bd-text"> Edit Profile</div>
                 </div>
                 <div className="col-1 ps-0">
-                    <button type="button" className="btn btn-dark"  style={{borderRadius: "45px", fontWeight: "bold", backgroundColor: "white"}}>Save</button>
-                </div>
+                    <Link to="/tuiter/profile">
+                     <button type="button" className="btn btn-dark"  style={{borderRadius: "45px", fontWeight: "bold", backgroundColor: "white"}} onClick={editClickHandler}>Save</button>
+                    </Link>
+                   </div>
 
             </div>
             <img className="col-12" src={profileData.bannerPicture} alt="banner"/>
@@ -37,7 +47,7 @@ const EditProfileItem = (
 
 
                 <div className="col-9 mb-1">
-                    <img src={profileData.profilePicture} className="wd-rnd-icon-12"/>
+                    <img alt="profile pic" src={profileData.profilePicture} className="wd-rnd-icon-12"/>
                 </div>
 
                 <div className="form-group form-outline form-white wd-grey-border mb-1"  style={{backgroundColor: "#070807"}}>
@@ -45,7 +55,8 @@ const EditProfileItem = (
                         Name
                     </div>
 
-                    <textarea type="name" className="form-control " rows="5"  style={{color: "white", backgroundColor: "#070807", resize: "none"}} id="exampleFormControlInput1">
+                    <textarea type="name" className="form-control " rows="5"  style={{color: "white", backgroundColor: "#070807", resize: "none"}} onChange={(event) =>
+                        setName(event.target.value)}>
                         {profileData.name}
                     </textarea>
 

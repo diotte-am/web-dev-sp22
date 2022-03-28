@@ -17,7 +17,7 @@ const WhatsHappening = () => {
         <div className="flex-container pt-1 col-12 row">
             <div className="col-2">
 
-                <img src="/tuiter/image/amare.png" className="wd-rnd-icon-50"/>
+                <img alt="profilepic" src="/tuiter/image/amare.png" className="wd-rnd-icon-50"/>
             </div>
             <div className="col-10">
               <textarea className="form-control text-body wd-grey-border" rows="2" placeholder="What's Happening" style={{backgroundColor: "#070807", resize: "none"}} value={whatsHappening}

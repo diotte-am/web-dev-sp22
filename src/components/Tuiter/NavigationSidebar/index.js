@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
-        active = 'home'
+        active
     }) => {
     const toolText = {
         fontFamily: "sans-serif",

@@ -5,6 +5,7 @@ import EditProfileItem from "./EditProfileItem";
 const EditProfileList = (
     {
         active = 'forYou'
+
     }
 ) => {
     return(
