@@ -45,7 +45,7 @@ const EditProfileItem = (
                         Name
                     </div>
 
-                    <textarea type="email" className="form-control " rows="5"  style={{color: "white", backgroundColor: "#070807"}} id="exampleFormControlInput1">
+                    <textarea type="name" className="form-control " rows="5"  style={{color: "white", backgroundColor: "#070807", resize: "none"}} id="exampleFormControlInput1">
                         {profileData.name}
                     </textarea>
 
@@ -56,7 +56,7 @@ const EditProfileItem = (
                         Bio
                     </div>
 
-                    <textarea type="email" className="form-control " rows="5"  style={{color: "white", backgroundColor: "#070807"}} id="exampleFormControlInput1">
+                    <textarea type="bio" className="form-control " rows="5"  style={{color: "white", backgroundColor: "#070807", resize: "none"}} id="exampleFormControlInput1">
                         {profileData.bio}
                     </textarea>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats";
+import TuitListConditional from "./TuitListConditional";
 
 const TuitListItem = ({tuits}) => {
     const dispatch = useDispatch();
@@ -14,27 +15,29 @@ const TuitListItem = ({tuits}) => {
 
 
                     <div className="row">
-                        <div className="col-2">
-                            <img src={tuits.logoImage} className="wd-rnd-icon-80"/>
+                        <div className="col-2 ps-0">
+                            <img src={tuits.logoImage} className="wd-rnd-icon-50"/>
                         </div>
 
 
-                        <div className="col-9 ps-4" >
-                            <span className="wd-c-white-bd-text">{tuits.topic} <i class="fas fa-check-circle"></i></span>
+                        <div className="col-9 ps-0" >
+                            <span className="wd-c-white-bd-text">{tuits.postedBy.username} <i class="fas fa-check-circle"></i></span>
 
-                            <span className="wd-c-grey-reg-text">{tuits.userName} </span> <span class="wd-c-grey-reg-text"> &bull; {tuits.time}</span>
+                            <span className="wd-c-grey-reg-text"> @{tuits.handle} </span>
                             <div className="wd-white-text" style={{lineHeight: "1.5em"}}>
                                 <div dangerouslySetInnerHTML={{__html:tuits["title"]}}></div>
 
                             </div>
-                            {tuits.tuit}
-                            <div className="row p-3" style={{borderRadius: "15px"}}>
-                                <img width="auto" src={tuits.image}/>
-                                <div className="wd-white-text" >{tuits.subhead}</div>
-                                <div className="wd-grey-normal-text">{tuits.details}</div>
+                            <div>
+                                {tuits.tuit}
                             </div>
+                            <div>
+                                <TuitListConditional tuits={tuits} />
+                            </div>
+
+
                         </div>
-                        <div className="col-1 pe-0">
+                        <div className="col-1 ps-0 pe-0">
                             <i onClick={() =>
                                 deleteTuit(tuits)}
                                className='fas fa-times pe-0'></i>
@@ -45,7 +48,7 @@ const TuitListItem = ({tuits}) => {
 
 
                 <div className="row">
-                    <div className="col-2 ps-4 pt-3">
+                    <div className="col-1 ms-3 pt-3">
 
                     </div>
                     <div className="col-9 row ms-1" >

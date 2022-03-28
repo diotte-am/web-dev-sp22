@@ -42,7 +42,7 @@ const ExploreComponent = () => {
     
                         <div>
                             <div class="card" style="border-color: #1e2023; border-radius: 0px">
-                                <img class="card-img" src="../image/Starship-Mk1-Day.jpg" style="border-radius: 0px" alt="SpaceX's Starship">
+                                <img class="card-img" src="../image/starship.jpg" style="border-radius: 0px" alt="SpaceX's Starship">
                                 <div class="card-img-overlay text-white d-flex justify-content-start align-items-end">
                                     <h2 style="margin-bottom: -8px">SpaceX's Starship</h2>
                                 </div>
