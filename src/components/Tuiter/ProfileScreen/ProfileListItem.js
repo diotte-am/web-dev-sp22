@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const ProfileListItem = (
     {profileData}
@@ -13,7 +14,7 @@ const ProfileListItem = (
                     <i className="fas fa-arrow-left"></i>
                 </div>
                 <div className="col-3 ms-0 p-0">
-                <div className="wd-c-white-bd-text"> {profileData.firstName} {profileData.lastName}</div>
+                <div className="wd-c-white-bd-text"> {profileData.name}</div>
                 <div className="wd-c-grey-reg-text"> {profileData.tuitCount} Tuits</div>
                 </div>
             </div>
@@ -26,12 +27,12 @@ const ProfileListItem = (
 
                     <div className="col-9">
                         <img src={profileData.profilePicture} className="wd-rnd-icon-12"/>
-                        <div className="wd-c-white-bd-text"> {profileData.firstName} {profileData.lastName}</div>
+                        <div className="wd-c-white-bd-text"> {profileData.name}</div>
                         <span className="wd-c-grey-reg-text">@{profileData.handle} </span>
                     </div>
-                    <div className="col-2 align-items-end ps-0 pe-0 ms-4 mt-4">
+                    <Link to="/tuiter/editProfile" className="col-2 align-items-end ps-0 pe-0 ms-4 mt-4">
                         <button type="button" className="btn btn-outline-dark btn-sm"  style={{borderRadius: "45px", fontWeight: "bold", color: "white", marginTop: "4em"}}>Edit Profile</button>
-                    </div>
+                    </Link>
 
                     <div className="wd-white-text">{profileData.bio}</div>
 
