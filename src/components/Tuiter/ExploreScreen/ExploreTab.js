@@ -7,7 +7,7 @@ const ExploreTab = (
 ) => {
     return(
 
-            <li className="nav-item d-none d-sm-none d-md-inline ">
+            <li key={tabs.name} className="nav-item d-none d-sm-none d-md-inline ">
 
                 <a className={`nav-link 
                 ${active === tabs.active ? 'active' : ''}

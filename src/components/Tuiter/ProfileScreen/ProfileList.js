@@ -12,7 +12,7 @@ const ProfileList = (
         <ul className="container pt-1 col-12 mt-0" >
             {
                 profileData.map(profileData => {
-                    return(<ProfileListItem profileData={profileData} active={active}/>
+                    return(<ProfileListItem profileData={profileData} key={profileData.handle}/>
                     );
                 })
             }

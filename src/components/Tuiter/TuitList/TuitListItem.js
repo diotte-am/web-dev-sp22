@@ -21,7 +21,7 @@ const TuitListItem = ({tuits}) => {
 
 
                         <div className="col-9 ps-0" >
-                            <span className="wd-c-white-bd-text">{tuits.postedBy.username} <i class="fas fa-check-circle"></i></span>
+                            <span className="wd-c-white-bd-text">{tuits.postedBy.username} <i className="fas fa-check-circle"></i></span>
 
                             <span className="wd-c-grey-reg-text"> @{tuits.handle} </span>
                             <div className="wd-white-text" style={{lineHeight: "1.5em"}}>

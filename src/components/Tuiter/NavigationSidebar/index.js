@@ -21,7 +21,7 @@ const NavigationSidebar = (
     };
 
     const location = useLocation();
-    console.log(location.pathname);
+
     return(
         <div className='list-group m-0 p-0 '>
 

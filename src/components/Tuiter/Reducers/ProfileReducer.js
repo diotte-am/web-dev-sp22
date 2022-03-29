@@ -16,7 +16,7 @@ const ProfileReducer = (state = profileData, action) => {
                      } else {
                          profile.bio = action.editBio;
                      }
-
+                     return(state);
                  })
              );
 

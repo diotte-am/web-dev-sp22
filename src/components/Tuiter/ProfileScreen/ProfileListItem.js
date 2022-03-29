@@ -8,7 +8,7 @@ const ProfileListItem = (
     return(
 
 
-        <div className="wd-text-regular">
+        <li className="wd-text-regular">
             <div className="d-grid gap-2 d-flex row col-12 ms-2 me-2">
                 <div className="col-1 p-0  me-0">
                     <i className="fas fa-arrow-left"></i>
@@ -51,7 +51,7 @@ const ProfileListItem = (
 
 
 
-            </div>
+            </li>
 
 
     )
