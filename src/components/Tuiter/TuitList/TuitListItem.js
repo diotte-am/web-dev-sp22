@@ -2,7 +2,7 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats";
 import TuitListConditional from "./TuitListConditional";
-import {deleteTuit} from "../actions/tuits-actions";
+import {deleteTuit, updateTuit} from "../actions/tuits-actions";
 
 const TuitListItem = ({tuits}) => {
     const dispatch = useDispatch();
@@ -63,9 +63,23 @@ const TuitListItem = ({tuits}) => {
                         </div>
 
                         <div className="col">
-                            <TuitStats tuit={tuits}/>
-                                <span className="wd-text-regular wd-grey-reg-text"></span>
+                            <div>
+                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.likes}</span>
+                                <i onClick={() => updateTuit(dispatch, {
+                                    ...tuits,
+                                    likes: tuits.likes + 1
+                                })} className="far fa-thumbs-up ms-2"></i>
+                            </div>
+                        </div>
 
+                        <div className="col">
+                            <div>
+                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.dislikes}</span>
+                                <i onClick={() => updateTuit(dispatch, {
+                                    ...tuits,
+                                    dislikes: tuits.dislikes + 1
+                                })} className="far fa-thumbs-down ms-2"></i>
+                            </div>
                         </div>
 
 
