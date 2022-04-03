@@ -20,7 +20,7 @@ const TuitListItem = ({tuits}) => {
 
 
                         <div className="col-9 ps-0" >
-                            <span className="wd-c-white-bd-text">{tuits.postedBy.username} <i className="fas fa-check-circle"></i></span>
+                            <span className="wd-c-white-bd-text"> <i className="fas fa-check-circle"></i></span>
 
                             <span className="wd-c-grey-reg-text"> @{tuits.handle} </span>
                             <div className="wd-white-text" style={{lineHeight: "1.5em"}}>
@@ -54,12 +54,12 @@ const TuitListItem = ({tuits}) => {
 
                         <div className="col" >
                             <a href="#"><i className="far fa-comment pe-2 wd-grey-reg-text"  aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats.comments}</span></i></a>
+                                <span className="wd-text-regular wd-grey-reg-text"> </span></i></a>
                         </div>
 
                         <div className="col">
                             <a href="#"><i className="fa fa-retweet wd-grey-reg-text" aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats.retuits}</span></i></a>
+                                <span className="wd-text-regular wd-grey-reg-text"> </span></i></a>
                         </div>
 
                         <div className="col">
