@@ -2,12 +2,11 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats";
 import TuitListConditional from "./TuitListConditional";
+import {deleteTuit} from "../actions/tuits-actions";
 
 const TuitListItem = ({tuits}) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
+
     return(
     <li  className="list-group-item pt-2 pb-2 pe-0">
 
@@ -38,8 +37,8 @@ const TuitListItem = ({tuits}) => {
 
                         </div>
                         <div className="col-1 ps-0 pe-0">
-                            <i onClick={() =>
-                                deleteTuit(tuits)}
+                            <i onClick={() => deleteTuit(
+                                dispatch, tuits)}
                                className='fas fa-times pe-0'></i>
                         </div>
 
