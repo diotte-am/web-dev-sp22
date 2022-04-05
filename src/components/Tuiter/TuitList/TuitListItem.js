@@ -20,7 +20,7 @@ const TuitListItem = ({tuits}) => {
 
 
                         <div className="col-9 ps-0" >
-                            <span className="wd-c-white-bd-text">{tuits.postedBy && (<div>{tuits.postedBy.username}</div>)} <i className="fas fa-check-circle"></i></span>
+                            <span className="wd-c-white-bd-text">{tuits.postedBy && (<span>{tuits.postedBy.username}</span>)} <i className="fas fa-check-circle"></i></span>
 
                             <span className="wd-c-grey-reg-text"> @{tuits.handle} </span>
                             <div className="wd-white-text" style={{lineHeight: "1.5em"}}>
@@ -59,7 +59,7 @@ const TuitListItem = ({tuits}) => {
 
                         <div className="col">
                             <a href="#"><i className="fa fa-retweet wd-grey-reg-text" aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats.retuits}</span></i></a>
+                                <span className="wd-text-regular wd-grey-reg-text "> {tuits.stats.retuits}</span></i></a>
                         </div>
 
                         <div className="col">
@@ -67,18 +67,27 @@ const TuitListItem = ({tuits}) => {
                                 <span className="wd-text-regular wd-grey-reg-text"> {tuits.likes}</span>
                                 <i onClick={() => updateTuit(dispatch, {
                                     ...tuits,
-                                    likes: tuits.likes + 1
-                                })} className="far fa-thumbs-up ms-2"></i>
+                                    likes: tuits.likes + 1,
+                                    disliked: false,
+                                    liked: true
+                                })
+                                }  className={`far ms-2 fa-thumbs-up ${tuits.liked? 'text-primary' : 'wd-grey-reg-text'}`}></i>
                             </div>
                         </div>
 
                         <div className="col">
                             <div>
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.dislikes}</span>
+
+                                <span className="wd-text-regular wd-grey-reg-text">
+                                    {tuits.dislikes}</span>
+
                                 <i onClick={() => updateTuit(dispatch, {
                                     ...tuits,
-                                    dislikes: tuits.dislikes + 1
-                                })} className="far fa-thumbs-down ms-2"></i>
+                                    dislikes: tuits.dislikes + 1,
+                                    disliked: true,
+                                    liked: false
+                                })
+                                } className={`far ms-2 fa-thumbs-down ${tuits.disliked? 'text-danger' : 'wd-grey-reg-text'}`}></i>
                             </div>
                         </div>
 
