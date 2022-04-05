@@ -5,6 +5,8 @@ import {
     FIND_ALL_TUITS
 } from "../actions/tuits-actions";
 
+
+
 const tuitsReducer = (state = [], action) => {
     switch (action.type) {
         case UPDATE_TUIT:
@@ -19,7 +21,8 @@ const tuitsReducer = (state = [], action) => {
                 postedBy: {
                     username: "SampleUser"
                 },
-                avatarImage: "/tuiter/image/react-logo.png",
+                handle: "sampleHandle",
+                avatarImage: "../../images/react-logo.png",
                 likes: 222,
                 dislikes: 444,
 

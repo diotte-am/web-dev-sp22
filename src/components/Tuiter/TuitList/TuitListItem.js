@@ -54,12 +54,12 @@ const TuitListItem = ({tuits}) => {
 
                         <div className="col" >
                             <a href="#"><i className="far fa-comment pe-2 wd-grey-reg-text"  aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats.comments}</span></i></a>
+                                <span className="wd-text-regular wd-grey-reg-text"> {tuits.stats && (<span>{tuits.stats.comments}</span>)} </span></i></a>
                         </div>
 
                         <div className="col">
                             <a href="#"><i className="fa fa-retweet wd-grey-reg-text" aria-hidden="true">
-                                <span className="wd-text-regular wd-grey-reg-text "> {tuits.stats.retuits}</span></i></a>
+                                <span className="wd-text-regular wd-grey-reg-text "> {tuits.stats && (<span>{tuits.stats.retuits}</span>)}</span></i></a>
                         </div>
 
                         <div className="col">
