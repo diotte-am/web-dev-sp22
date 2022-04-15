@@ -9,7 +9,7 @@ const WhatsHappening = () => {
         useState({handle: "adiotte", logoImage: '/tuiter/image/amare.png', tuit: 'New tuit', liked: false, disliked: false, likes: 0, dislikes: 0, postedBy: {username: 'AmareDiotte'}});
     const dispatch = useDispatch();
     useEffect(() => {
-        findAllTuits(dispatch());
+        findAllTuits(dispatch);
     });
 
     return (
