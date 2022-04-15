@@ -33,5 +33,8 @@ export const updateTuit = async (dispatch, tuit) => {
 
 export const deleteTuit = async (dispatch, tuit) => {
     const response = await service.deleteTuit(tuit);
-
+    dispatch({
+        type: DELETE_TUIT,
+        tuit
+    })
 }
