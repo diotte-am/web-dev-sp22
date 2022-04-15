@@ -23,6 +23,8 @@ const tuitsReducer = (state = [], action) => {
                 handle: "adiotte",
                 likes: 0,
                 dislikes: 0,
+                liked: false,
+                dislike: false,
 
                 stats: {
                     retuits: 0,

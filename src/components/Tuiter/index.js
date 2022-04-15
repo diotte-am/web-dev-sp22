@@ -9,12 +9,6 @@ import {Provider} from "react-redux";
 import WhoToFollowList from "./WhoToFollowList";
 import profileReducer from "./Reducers/ProfileReducer";
 
-
-
-
-
-
-
 const reducer = combineReducers({
     tuits: tuitsReducer, who: whoReducer, profile: profileReducer
 });
