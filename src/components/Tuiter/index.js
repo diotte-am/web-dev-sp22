@@ -3,13 +3,14 @@ import {Link} from "react-router-dom";
 import {Outlet} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
 import whoReducer from "./Reducers/WhoReducer";
+import tuitsReducer from "./Reducers/TuitsReducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import WhoToFollowList from "./WhoToFollowList";
 import profileReducer from "./Reducers/ProfileReducer";
 
 const reducer = combineReducers({
-    who: whoReducer, profile: profileReducer
+    tuits: tuitsReducer, who: whoReducer, profile: profileReducer
 });
 
 const store = createStore(reducer);
