@@ -16,21 +16,8 @@ const tuitsReducer = (state = [], action) => {
 
         case CREATE_TUIT:
             const newTuit = {
-                tuit: action.newTuit.tuit,
-                _id: (new Date()).getTime() + '',
-                postedBy: {
-                    username: "SampleUser"
-                },
-                handle: "sampleHandle",
-                avatarImage: "../../images/react-logo.png",
-                likes: 222,
-                dislikes: 444,
+                tuit: action.newTuit.tuit
 
-                stats: {
-                    retuits: 111,
-
-                    replies: 333
-                }
             }
             return [
                 newTuit,
