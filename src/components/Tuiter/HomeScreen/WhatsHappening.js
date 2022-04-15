@@ -6,14 +6,14 @@ import {createTuit}
 
 const WhatsHappening = () => {
     const [newTuit, setNewTuit] =
-        useState({tuit: 'New tuit', likes: 0, dislikes: 0, postedBy: {username: 'Amare Diotte'}});
+        useState({tuit: 'New tuit', likes: 0, dislikes: 0, postedBy: {username: 'AmareDiotte'}});
     const dispatch = useDispatch();
 
     return (
         <>
         <div className="flex-container pt-1 col-12 row">
             <div className="col-2">
-                <img alt="profilepic" src="/tuiter/image/amare.png" className="wd-rnd-icon-50"/>
+                <img alt="profilepic" src="../../images/kaiman.jpg" className="wd-rnd-icon-50"/>
             </div>
             <div className="col-10">
                  <textarea className="form-control text-body wd-grey-border" rows="2" placeholder="What's Happening" style={{backgroundColor: "#070807", resize: "none"}}
