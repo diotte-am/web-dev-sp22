@@ -17,7 +17,7 @@ const tuitsReducer = (state = [], action) => {
         case CREATE_TUIT:
             const newTuit = {
                 tuit: action.newTuit.tuit,
-                logoImage: "https://cdn.pixabay.com/photo/2013/07/12/16/51/internet-151384_960_720.png",
+                logoImage: "/tuiter/image/amare.png",
                 postedBy: {
                     username: "Amare Diotte"
                 },
