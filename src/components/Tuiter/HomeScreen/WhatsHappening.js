@@ -24,8 +24,11 @@ const WhatsHappening = () => {
             <div className="flex-container row pb-2">
                 <div className="col-10">
                 </div>
-                <button onClick={() =>
-                    createTuit(dispatch, newTuit)}
+                <button onClick={() => {
+                    createTuit(dispatch, newTuit);
+                    findAllTuits();
+                }
+                    }
                         className="btn btn-primary col-2" style={{borderRadius: "25px", border: "none", fontWeight: "bold"}}>
                     Tuit
                 </button>
