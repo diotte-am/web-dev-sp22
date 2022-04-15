@@ -9,6 +9,7 @@ import {
 
 const tuitsReducer = (state = [], action) => {
     switch (action.type) {
+        
         case UPDATE_TUIT:
             return state.map(
                 tuit => tuit._id === action.tuit._id ?
