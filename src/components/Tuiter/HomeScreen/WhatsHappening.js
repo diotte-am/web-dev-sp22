@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
-import {createTuit}
+import {createTuit, findAllTuits}
     from "../actions/tuits-actions";
 
 
@@ -26,6 +26,9 @@ const WhatsHappening = () => {
                 </div>
                 <button onClick={() =>{
                     createTuit(dispatch, newTuit).then(r => console.log(r));
+                    useEffect(() =>
+                            findAllTuits(dispatch),
+                        []);
 
                 }
                     }
