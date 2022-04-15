@@ -16,8 +16,20 @@ const tuitsReducer = (state = [], action) => {
 
         case CREATE_TUIT:
             const newTuit = {
-                tuit: action.newTuit.tuit
+                tuit: action.newTuit.tuit,
+                _id: (new Date()).getTime() + '',
+                postedBy: {
+                    username: "SampleUser"
+                },
+                handle: "Amare Diotte",
+                likes: 0,
+                dislikes: 0,
 
+                stats: {
+                    retuits: 0,
+
+                    replies: 0
+                }
             }
             return [
                 newTuit,
