@@ -10,8 +10,9 @@ const TuitList = () => {
         state => state.tuits);
 
     const dispatch = useDispatch();
-    useEffect(() =>
-            findAllTuits(dispatch),
+    useEffect(() => {
+            return findAllTuits(dispatch);
+        },
         []);
     return(
         <ul className="list-group">
