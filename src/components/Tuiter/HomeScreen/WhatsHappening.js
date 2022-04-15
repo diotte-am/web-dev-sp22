@@ -6,7 +6,7 @@ import {createTuit}
 
 const WhatsHappening = () => {
     const [newTuit, setNewTuit] =
-        useState('');
+        useState({ _id: (new Date()).getTime() + '', tuit: 'New tuit', liked: false, disliked: false, likes: 0, dislikes: 0, postedBy: {username: 'AmareDiotte'}});
     const dispatch = useDispatch();
 
     return (
