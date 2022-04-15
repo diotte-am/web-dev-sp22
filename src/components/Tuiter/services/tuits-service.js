@@ -4,9 +4,8 @@ const TUITS_API = `${API_BASE}/tuits`;
 
 
 export const createTuit = async (tuit) => {
-    const code = await axios.post(TUITS_API, tuit);
-    const tuits = await axios.get(TUITS_API);
-    return tuits.data;
+    const response = await axios.post(TUITS_API, tuit)
+    return response.data;
 }
 
 
