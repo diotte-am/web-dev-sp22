@@ -6,7 +6,7 @@ import {createTuit}
 
 const WhatsHappening = () => {
     const [newTuit, setNewTuit] =
-        useState({avatarImage: '/tuiter/image/amare.png', tuit: 'New tuit', liked: false, disliked: false, likes: 0, dislikes: 0, postedBy: {username: 'AmareDiotte'}});
+        useState({avatarImage: 'https://cdn.pixabay.com/photo/2013/07/12/16/51/internet-151384_960_720.png', tuit: 'New tuit', liked: false, disliked: false, likes: 0, dislikes: 0, postedBy: {username: 'AmareDiotte'}});
     const dispatch = useDispatch();
 
     return (
