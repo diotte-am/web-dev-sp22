@@ -1,6 +1,5 @@
 import axios from 'axios';
 const API_BASE = process.env.REACT_APP_API_BASE_9;
-console.log("apibase " + API_BASE);
 const TUITS_API = `${API_BASE}/tuits`;
 
 
@@ -17,6 +16,7 @@ export const findAllTuits = async () => {
 }
 
 export const deleteTuit = async (tuit) => {
+    console.log(tuit._id);
     const response = await axios
         .delete(`${TUITS_API}/${tuit._id}`);
     return response.data;
