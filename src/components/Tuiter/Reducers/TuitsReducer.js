@@ -27,7 +27,7 @@ const tuitsReducer = (state = [], action) => {
 
                 stats: {
                     retuits: 0,
-
+                    comments: 0,
                     replies: 0
                 }
             }
