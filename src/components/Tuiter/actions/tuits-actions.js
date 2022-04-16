@@ -10,7 +10,12 @@ export const createTuit = async (dispatch, tuit) => {
     dispatch({
         type: CREATE_TUIT,
         newTuit
-    });
+    },
+        {
+            type: FIND_ALL_TUITS,
+            newTuit
+        }
+        );
 }
 
 
