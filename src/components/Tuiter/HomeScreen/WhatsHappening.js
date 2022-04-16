@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { Link } from 'react-router-dom'
 import {useDispatch} from "react-redux";
 import {createTuit, findAllTuits}
     from "../actions/tuits-actions";
@@ -32,7 +33,8 @@ const WhatsHappening = () => {
             <div className="flex-container row pb-2">
                 <div className="col-10">
                 </div>
-                <button onClick={() =>{
+
+                <button component={ Link } to="/tuiter" onClick={() =>{
                     createTuit(dispatch, newTuit).then(r => console.log(r));
 
                 }
